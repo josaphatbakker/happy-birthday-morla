@@ -151,18 +151,19 @@ main {
 .carousel {
   margin-top: 2rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 1rem;
+  align-items: center;
 }
 
 .carousel-track {
-  flex: 1;
+  width: min(90vw, 420px);
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  padding: 1rem 0;
+  padding-bottom: 0.25rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
@@ -172,23 +173,30 @@ main {
 }
 
 .slide {
-  flex: 0 0 clamp(220px, 70vw, 360px);
+  flex: 0 0 100%;
   scroll-snap-align: center;
 }
 
 .slide img {
   width: 100%;
-  min-height: 320px;
-  object-fit: cover;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  background: white;
+}
+
+.carousel-nav {
+  display: flex;
+  gap: 0.75rem;
 }
 
 .carousel-control {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(27, 19, 51, 0.15);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(27, 19, 51, 0.12);
   border-radius: 999px;
   width: 48px;
   height: 48px;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: var(--hot-pink);
   cursor: pointer;
   display: grid;
@@ -299,22 +307,18 @@ footer {
     padding: 2.5rem 1.5rem;
   }
 
-  .carousel {
-    gap: 0.5rem;
-  }
-
-  .slide {
-    flex-basis: 80vw;
+  .carousel-track {
+    width: 100%;
   }
 
   .slide img {
-    min-height: 260px;
+    max-height: 70vh;
   }
 
   .carousel-control {
     width: 42px;
     height: 42px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .timeline::before {

@@ -17,7 +17,7 @@ scrollButtons.forEach((button) => {
 const updateToggleLabel = () => {
   if (!audioToggle) return;
   const isPlaying = !bgSong.paused;
-  audioToggle.textContent = isPlaying ? 'Pause our song' : 'Play our song';
+  audioToggle.textContent = isPlaying ? 'Pause the song' : 'Play a romantic song';
 };
 
 const handleAudioToggle = async () => {
