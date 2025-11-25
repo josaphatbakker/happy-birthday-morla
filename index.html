@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday, Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Replace the audio source with your own MP3 inside assets/audio -->
+    <audio id="bg-song" loop preload="auto">
+      <source src="assets/audio/birthday-song.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="floating-hearts" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="eyebrow">Happy Birthday, my love</p>
+      <h1>Another year more beautiful with you in it</h1>
+      <p class="lead">
+        Today is all about celebrating you—your kindness, laughter, and the
+        magic you bring into my life every single day.
+      </p>
+      <div class="hero-actions">
+        <button class="cta" data-scroll-target="#gallery">See our memories</button>
+        <button class="secondary" id="audio-toggle">Play our song</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="highlights">
+        <h2>Reasons I adore you</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Your smile</h3>
+            <p>It is the sunrise that brightens even my toughest mornings.</p>
+          </article>
+          <article class="card">
+            <h3>Your heart</h3>
+            <p>You care deeply, love fiercely, and that inspires me every day.</p>
+          </article>
+          <article class="card">
+            <h3>Your dreams</h3>
+            <p>I love watching you chase what you want, and I’ll always cheer you on.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="gallery">
+        <div class="panel-heading">
+          <p class="eyebrow">Our snapshots</p>
+          <h2>Moments worth reliving</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="assets/images/photo-1.jpg" alt="Memory 1" />
+            <figcaption>That rainy afternoon date.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/photo-2.jpg" alt="Memory 2" />
+            <figcaption>Beach day giggles.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/photo-3.jpg" alt="Memory 3" />
+            <figcaption>Birthday surprise last year.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/photo-4.jpg" alt="Memory 4" />
+            <figcaption>First trip together.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/photo-5.jpg" alt="Memory 5" />
+            <figcaption>Cozy movie nights.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/photo-6.jpg" alt="Memory 6" />
+            <figcaption>Laughing until it hurt.</figcaption>
+          </figure>
+        </div>
+        <p class="hint">
+          Drop your favorite photos into <code>assets/images</code> and update
+          the filenames and captions above.
+        </p>
+      </section>
+
+      <section class="panel soft" id="timeline">
+        <div class="panel-heading">
+          <p class="eyebrow">Our story</p>
+          <h2>Mile markers of us</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="timestamp">May 2022</span>
+            <p>We met, and the world shifted just a little.</p>
+          </li>
+          <li>
+            <span class="timestamp">Aug 2022</span>
+            <p>First adventure out of town, chasing sunsets and snacks.</p>
+          </li>
+          <li>
+            <span class="timestamp">Dec 2023</span>
+            <p>You reminded me what love feels like in the quiet moments.</p>
+          </li>
+          <li>
+            <span class="timestamp">Today</span>
+            <p>Celebrating you, proud to stand beside you for every chapter.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="panel letter" id="love-letter">
+        <h2>A little note</h2>
+        <p>
+          Thank you for showing me how bright life can be when it’s shared with
+          someone incredible. I promise to keep learning you, loving you, and
+          lifting you every day. Happy birthday, sweetheart. Here’s to countless
+          more candles, adventures, and “us” stories.
+        </p>
+        <p class="signature">Forever yours, <span>Your Name</span></p>
+      </section>
+    </main>
+
+    <footer>
+      <small>Made with so much love • Replace this with your names</small>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
