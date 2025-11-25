@@ -15,7 +15,7 @@
   <body>
     <!-- Replace the audio source with your own MP3 inside assets/audio -->
     <audio id="bg-song" loop preload="auto">
-      <source src="assets/audio/birthday-song.mp3" type="audio/mpeg" />
+      <source src="assets/audio/tenerife-sea.mp3" type="audio/mpeg" />
     </audio>
 
     <div class="floating-hearts" aria-hidden="true"></div>
@@ -55,37 +55,53 @@
       <section class="panel" id="gallery">
         <div class="panel-heading">
           <p class="eyebrow">Our snapshots</p>
-          <h2>Moments worth reliving</h2>
+          <h2>Swipe through our favorite memories</h2>
         </div>
-        <div class="gallery-grid">
-          <figure>
-            <img src="assets/images/photo-1.jpg" alt="Memory 1" />
-            <figcaption>That rainy afternoon date.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/images/photo-2.jpg" alt="Memory 2" />
-            <figcaption>Beach day giggles.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/images/photo-3.jpg" alt="Memory 3" />
-            <figcaption>Birthday surprise last year.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/images/photo-4.jpg" alt="Memory 4" />
-            <figcaption>First trip together.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/images/photo-5.jpg" alt="Memory 5" />
-            <figcaption>Cozy movie nights.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/images/photo-6.jpg" alt="Memory 6" />
-            <figcaption>Laughing until it hurt.</figcaption>
-          </figure>
+
+        <div class="carousel" aria-label="Photo memories">
+          <button
+            class="carousel-control prev"
+            aria-label="Show previous photo"
+            data-direction="-1"
+          >
+            ‹
+          </button>
+
+          <div class="carousel-track" tabindex="0">
+            <figure class="slide">
+              <img src="assets/images/photo-1.jpg" alt="Smiling together" />
+            </figure>
+            <figure class="slide">
+              <img src="assets/images/photo-2.jpg" alt="Laughing on a sunny day" />
+            </figure>
+            <figure class="slide">
+              <img src="assets/images/photo-3.jpg" alt="Holding hands outside" />
+            </figure>
+            <figure class="slide">
+              <img src="assets/images/photo-4.jpg" alt="Sharing dessert" />
+            </figure>
+            <figure class="slide">
+              <img src="assets/images/photo-5.jpg" alt="Candid hug" />
+            </figure>
+            <figure class="slide">
+              <img src="assets/images/photo-6.jpg" alt="Birthday celebration" />
+            </figure>
+          </div>
+
+          <button
+            class="carousel-control next"
+            aria-label="Show next photo"
+            data-direction="1"
+          >
+            ›
+          </button>
         </div>
+
         <p class="hint">
-          Drop your favorite photos into <code>assets/images</code> and update
-          the filenames and captions above.
+          Swap any photo by dropping a new image inside
+          <code>assets/images</code> and updating the corresponding
+          <code>&lt;img&gt;</code> path above. The slider is swipe-friendly on
+          iPhone, so she can just flick through.
         </p>
       </section>
 

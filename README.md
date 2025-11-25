@@ -17,7 +17,7 @@ birthday-site/
 ### Add your photos
 
 1. Place JPG/PNG files inside `assets/images`.
-2. Update the `<img src="">` paths and captions in `index.html` so they reference your filenames.
+2. Update the `<img src="">` paths inside the carousel in `index.html` so they reference your filenames (no captions needed).
 3. Keep each image under ~1‑2 MB for fast loads (Preview on macOS or Paint/Photos app can resize).
 
 ### Add your background song
