@@ -152,8 +152,9 @@ main {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   align-items: center;
+  position: relative;
+  padding-bottom: 4rem;
 }
 
 .carousel-track {
@@ -186,8 +187,16 @@ main {
 }
 
 .carousel-nav {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 0.75rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--soft-shadow);
 }
 
 .carousel-control {
